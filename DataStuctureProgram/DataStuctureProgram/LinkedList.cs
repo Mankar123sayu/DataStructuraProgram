@@ -37,24 +37,45 @@ namespace DataStructureProblem
                 head.next = temp;
             }
         }
-            public void Display()
+        public void Display()
+        {
+            Node temp = this.head;
+            if (temp == null)
             {
-                Node temp = this.head;
-                if (temp == null)
-                {
-                    Console.WriteLine("LinkedList is empty");
-                    return;
-                }
-                while (temp != null)
-                {
-                    Console.WriteLine(temp.data + " ");
-                    temp = temp.next;
-                }
+                Console.WriteLine("LinkedList is empty");
+                return;
             }
-        
+            while (temp != null)
+            {
+                Console.WriteLine(temp.data + " ");
+                temp = temp.next;
+            }
+        }
+        public void InsertAtParticularPosition(int position, int data)
+        {
+            Node newestNode = new Node(data);
+            if (this.head == null)
+            {
+                this.head = newestNode;
+            }
+            if (position == 0)
+            {
+                newestNode.next = this.head;
+                this.head = newestNode;
+                return;
+            }
+            Node previous = null;
+            Node current = this.head;
+            int count = 0;
+            while (current != null && count < position)
+            {
+                previous = current;
+                current = current.next;
+                count++;
+            }
+            newestNode.next = previous.next;
+            previous.next = newestNode;
+        }
     }
 }
-
-
-
-
+       
