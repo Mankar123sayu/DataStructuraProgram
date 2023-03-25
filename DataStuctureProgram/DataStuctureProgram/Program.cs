@@ -31,12 +31,15 @@ namespace DataStructure
             //Data.Search(56);
             //Data.Display();
 
-            int position = Data.Search(30);
-            Data.InsertAtParticularPosition(position + 1, 40);
-            Data.Display();
-            Console.WriteLine();
-            int searchDelete = Data.Search(40);
-            Data.DeleteNodeAtParticularPosition(searchDelete);
+           // int position = Data.Search(30);
+            //Data.InsertAtParticularPosition(position + 1, 40);
+            //Data.Display();
+            //Console.WriteLine();
+            //int searchDelete = Data.Search(40);
+            //Data.DeleteNodeAtParticularPosition(searchDelete);
+           // Data.Display();
+
+            Data.Size();
             Data.Display();
         }
     }
