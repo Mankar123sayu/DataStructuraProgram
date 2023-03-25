@@ -2,22 +2,22 @@
 using System;
 using System.Collections.Generic;
 
-namespace DataStructire
+namespace DataStructure
 {
     public class Program
     {
         static void Main(string[] args)
         {
             LinkedList Data = new LinkedList();
-            Data.Add(56);
-            Data.Add(30);
-            Data.Add(70);
+            //Data.Add(56);
+            //Data.Add(30);
+            //Data.Add(70);
            // Data.Display();
 
-            //Data.AddInReverseOrder(56);
-            // Data.AddInReverseOrder(30);
-            // Data.AddInReverseOrder(70);
-            //Data.Display();
+             Data.AddInReverseOrder(56);
+             Data.AddInReverseOrder(30);
+             Data.AddInReverseOrder(70);
+            Data.Display();
 
             // Data.InsertAtParticularPosition(1, 30);
             // Data.Display();
