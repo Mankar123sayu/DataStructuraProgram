@@ -8,10 +8,10 @@ namespace DataStructure
     {
         static void Main(string[] args)
         {
-            LinkedList Data = new LinkedList();
-            Data.Add(56);
-            Data.Add(30);
-            Data.Add(70);
+           // LinkedList Data = new LinkedList();
+            //Data.Add(56);
+            //Data.Add(30);
+            //Data.Add(70);
            //Data.Display();
 
             // Data.AddInReverseOrder(56);
@@ -39,8 +39,14 @@ namespace DataStructure
             //Data.DeleteNodeAtParticularPosition(searchDelete);
            // Data.Display();
 
-            Data.Size();
-            Data.Display();
+            //Data.Size();
+            //Data.Display();
+
+            LinkedListStack stack = new LinkedListStack();
+            stack.Push(70);
+            stack.Push(30);
+            stack.Push(56);
+            stack.Display();
         }
     }
 }
