@@ -25,11 +25,11 @@ namespace DataStructure
             // Data.RemoveFirstNode();
              //Data.Display();
 
-            Data.RemoveLastNode();
-            Data.Display();
+            //Data.RemoveLastNode();
+           // Data.Display();
 
-            //Data.Search(56);
-            //Data.Display();
+            Data.Search(56);
+            Data.Display();
 
            // int position = Data.Search(30);
            // Data.InsertAtParticularPosition(position + 1, 40);
