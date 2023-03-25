@@ -10,7 +10,7 @@ namespace DataStructure
         {
             LinkedList Data = new LinkedList();
             Data.Add(56);
-            //Data.Add(30);
+            Data.Add(30);
             Data.Add(70);
            //Data.Display();
 
@@ -19,11 +19,11 @@ namespace DataStructure
             // Data.AddInReverseOrder(70);
             //Data.Display();
 
-             Data.InsertAtParticularPosition(1, 30);
-             Data.Display();
+             //Data.InsertAtParticularPosition(1, 30);
+             //Data.Display();
 
-            // Data.RemoveFirstNode();
-            // Data.Display();
+             Data.RemoveFirstNode();
+             Data.Display();
 
             //Data.RemoveLastNode();
             //Data.Display();

@@ -76,6 +76,14 @@ namespace DataStructureProblem
             newestNode.next = previous.next;
             previous.next = newestNode;
         }
+        public void RemoveFirstNode()
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("Linked List is empty");
+            }
+            this.head = this.head.next;
+        }
     }
 }
        
