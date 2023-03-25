@@ -1,5 +1,6 @@
 ﻿using DataStructureProblem;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 
 namespace DataStructure
@@ -42,15 +43,21 @@ namespace DataStructure
             //Data.Size();
             //Data.Display();
 
-            LinkedListStack stack = new LinkedListStack();
-            stack.Push(70);
-            stack.Push(30);
-            stack.Push(56);
-            stack.Display();
+           // LinkedListStack stack = new LinkedListStack();
+            //stack.Push(70);
+            //stack.Push(30);
+           // stack.Push(56);
+           // stack.Display();
 
-            stack.Peak();
-            stack.Pop();
-            stack.Display();
+            //stack.Peak();
+            //stack.Pop();
+            //stack.Display();
+
+             LinkedListQueue queue = new LinkedListQueue();
+            queue.Enqueue(56);
+            queue.Enqueue(30);
+            queue.Enqueue(70);
+            queue.Display();
         }
     }
 }
