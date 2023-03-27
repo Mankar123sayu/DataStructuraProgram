@@ -63,8 +63,11 @@ namespace DataStructure
            // queue.Dequeue();
            // queue.Display();
 
-            BinarySearch binarySearch = new BinarySearch();
-            binarySearch.ReadFile("D:\\bridgelab\\DataStructuraProgram\\DataStuctureProgram\\DataStuctureProgram\\File.txt");
+            //BinarySearch binarySearch = new BinarySearch();
+            //binarySearch.ReadFile("D:\\bridgelab\\DataStructuraProgram\\DataStuctureProgram\\DataStuctureProgram\\File.txt");
+
+            InsertionSort sort = new InsertionSort();
+            sort.ReadFile1("D:\\bridgelab\\DataStructuraProgram\\DataStuctureProgram\\DataStuctureProgram\\File.txt");
         }
     }
 }

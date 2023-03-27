@@ -1,1 +1,1 @@
-﻿mon,tue,wed,thur,fri,sat,sun
+﻿mon,tues,wed,thur,frida,sat,sunday
