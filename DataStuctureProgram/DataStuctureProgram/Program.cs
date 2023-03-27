@@ -66,11 +66,14 @@ namespace DataStructure
             //BinarySearch binarySearch = new BinarySearch();
             //binarySearch.ReadFile("D:\\bridgelab\\DataStructuraProgram\\DataStuctureProgram\\DataStuctureProgram\\File.txt");
 
-            //InsertionSort sort = new InsertionSort();
+           // InsertionSort sort = new InsertionSort();
             //sort.ReadFile1("D:\\bridgelab\\DataStructuraProgram\\DataStuctureProgram\\DataStuctureProgram\\File.txt");
 
-            BubbleSort bubbleSort = new BubbleSort();
-            bubbleSort.ReadFile3("D:\\bridgelab\\DataStructuraProgram\\DataStuctureProgram\\DataStuctureProgram\\Int.txt");
+            //BubbleSort bubbleSort = new BubbleSort();
+            //bubbleSort.ReadFile3("D:\\bridgelab\\DataStructuraProgram\\DataStuctureProgram\\DataStuctureProgram\\Int.txt");
+
+            Anagram anagram = new Anagram();
+            anagram.CheckAnagram();
 
         }
     }

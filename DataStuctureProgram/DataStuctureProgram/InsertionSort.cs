@@ -12,6 +12,7 @@ namespace DataStuctureProgram
         {
             string readData = File.ReadAllText(filePath);
             string[] words = readData.Split(",");
+            //int[] arr = new int[words.Length];
             foreach (var data in words)
             {
                 Console.WriteLine(data);
@@ -27,6 +28,11 @@ namespace DataStuctureProgram
                         words[j] = temp;
                     }
                 }
+
+            }
+            foreach (var data in words)
+            {
+                Console.WriteLine(data);
             }
         }
     }
