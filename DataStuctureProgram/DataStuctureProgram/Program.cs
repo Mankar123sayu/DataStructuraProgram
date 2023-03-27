@@ -72,8 +72,11 @@ namespace DataStructure
             //BubbleSort bubbleSort = new BubbleSort();
             //bubbleSort.ReadFile3("D:\\bridgelab\\DataStructuraProgram\\DataStuctureProgram\\DataStuctureProgram\\Int.txt");
 
-            Anagram anagram = new Anagram();
-            anagram.CheckAnagram();
+           // Anagram anagram = new Anagram();
+            //anagram.CheckAnagram();
+
+            CoustomizeString coustomizeString = new CoustomizeString();
+            coustomizeString.Customize();
 
         }
     }
