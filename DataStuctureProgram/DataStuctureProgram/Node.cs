@@ -4,18 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DataStructureProgram
+namespace DataStructure
 {
-
-
-    public class Node
+    public class Node<T>
     {
-        public int data;
-        public Node next;
-        public Node(int value)
+        public T data;
+        public Node<T> next;
+        public Node(T value)
         {
             this.data = value;
         }
     }
-
 }

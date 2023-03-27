@@ -1,4 +1,4 @@
-﻿using DataStructureProblem;
+﻿
 using DataStuctureProgram;
 using System;
 using System.Collections;
@@ -75,8 +75,11 @@ namespace DataStructure
            // Anagram anagram = new Anagram();
             //anagram.CheckAnagram();
 
-            CoustomizeString coustomizeString = new CoustomizeString();
-            coustomizeString.Customize();
+            //CoustomizeString coustomizeString = new CoustomizeString();
+            //coustomizeString.Customize();
+
+            BankingCash bankingCash = new BankingCash();
+            bankingCash.CheckBalance();
 
         }
     }

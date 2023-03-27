@@ -1,20 +1,24 @@
-﻿using DataStructureProgram;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace DataStructureProblem
+namespace DataStructure
 {
-    public class LinkedList
+    public class LinkedList2<T>
     {
-        public Node head;
-        public void Add(int data)
+        public Node<T> head;
+        public void Add(T data)
         {
-            Node node = new Node(data);
+            Node<T> node = new Node<T>(data);
             if (this.head == null)
             {
                 this.head = node;
             }
             else
             {
-                Node temp = head;
+                Node<T> temp = head;
                 while (temp.next != null)
                 {
                     temp = temp.next;
@@ -23,23 +27,23 @@ namespace DataStructureProblem
             }
             Console.WriteLine("{0} inserted into linked list", node.data);
         }
-        public void AddInReverseOrder(int data)
+        public void AddInReverseOrder(T data)
         {
-            Node newNode = new Node(data);
+            Node<T> newNode = new Node<T>(data);
             if (this.head == null)
             {
                 this.head = newNode;
             }
             else
             {
-                Node temp = this.head;
+                Node<T> temp = this.head;
                 head = newNode;
                 head.next = temp;
             }
         }
         public void Display()
         {
-            Node temp = this.head;
+            Node<T> temp = this.head;
             if (temp == null)
             {
                 Console.WriteLine("LinkedList is empty");
@@ -47,13 +51,13 @@ namespace DataStructureProblem
             }
             while (temp != null)
             {
-                Console.WriteLine(temp.data + " ");
+                Console.Write(temp.data + " ");
                 temp = temp.next;
             }
         }
-        public void InsertAtParticularPosition(int position, int data)
+        public void InsertAtParticularPosition(int position, T data)
         {
-            Node newestNode = new Node(data);
+            Node<T> newestNode = new Node<T>(data);
             if (this.head == null)
             {
                 this.head = newestNode;
@@ -64,8 +68,8 @@ namespace DataStructureProblem
                 this.head = newestNode;
                 return;
             }
-            Node previous = null;
-            Node current = this.head;
+            Node<T> previous = null;
+            Node<T> current = this.head;
             int count = 0;
             while (current != null && count < position)
             {
@@ -94,22 +98,23 @@ namespace DataStructureProblem
             {
                 this.head = null;
             }
-            Node NewNode = head;
+            Node<T> NewNode = head;
             while (NewNode.next.next != null)
             {
                 NewNode = NewNode.next;
             }
             NewNode.next = null;
         }
-        public int Search(int value)
+        public int Search(T value)
         {
-            Node node = this.head;
+            Node<T> node = this.head;
             int count = 0;
             while (node != null)
             {
                 if (node.data.Equals(value))
                 {
-                    Console.WriteLine(count + "th position");
+                    Console.WriteLine(count + " position");
+                    return count;
                 }
                 node = node.next;
                 count++;
@@ -123,7 +128,7 @@ namespace DataStructureProblem
                 Console.WriteLine("Linked List is empty");
                 return;
             }
-            Node temp = this.head;
+            Node<T> temp = this.head;
             if (position == 0)
             {
                 this.head = temp.next;
@@ -137,13 +142,13 @@ namespace DataStructureProblem
             {
                 return;
             }
-            Node next = temp.next.next;
+            Node<T> next = temp.next;
             temp.next = next;
-            Size();
+            //Size();
         }
         public void Size()
         {
-            Node temp = this.head;
+            Node<T> temp = this.head;
             int count = 0;
             if (temp == null)
             {
@@ -158,8 +163,6 @@ namespace DataStructureProblem
             }
             Console.WriteLine("Length of the Linked List is: " + count);
         }
+
     }
 }
-    
-
-       

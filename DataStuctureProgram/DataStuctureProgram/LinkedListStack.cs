@@ -1,4 +1,4 @@
-﻿using DataStructureProgram;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,16 +7,16 @@ using System.Threading.Tasks;
 
 namespace DataStructure
 {
-    public class LinkedListStack
+    public class LinkedListStack<T>
     {
-        public Node top;
+        public Node<T> top;
         public LinkedListStack()
         {
             this.top = null;
         }
-        public void Push(int value)
+        public void Push(T value)
         {
-            Node node = new Node(value);
+            Node<T> node = new Node<T>(value);
             if (this.top == null)
             {
                 node.next = null;
@@ -30,7 +30,7 @@ namespace DataStructure
         }
         public void Display()
         {
-            Node temp = this.top;
+            Node<T> temp = this.top;
             while (temp != null)
             {
                 Console.WriteLine(temp.data + " ");
